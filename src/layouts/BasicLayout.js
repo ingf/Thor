@@ -161,10 +161,10 @@ class BasicLayout extends React.PureComponent {
   getPageTitle() {
     const { location } = this.props
     const { pathname } = location
-    let title = '知乎商业化'
+    let title = '商业化'
     getRouteData('UserLayout').forEach(item => {
       if (item.path === pathname) {
-        title = `${item.name} - 知乎商业化`
+        title = `${item.name} - 商业化`
       }
     })
     return title
@@ -258,7 +258,7 @@ class BasicLayout extends React.PureComponent {
           <div className={styles.logo}>
             <Link to="/">
               <img src={logo} alt="logo" />
-              <h1>知乎商业化</h1>
+              <h1>商业化</h1>
             </Link>
           </div>
           <Menu
@@ -295,14 +295,14 @@ class BasicLayout extends React.PureComponent {
             <GlobalFooter
               links={[
                 {
-                  title: '知乎',
-                  href: 'https://zhihu.com',
+                  title: '',
+                  href: 'https://google.com',
                   blankTarget: true,
                 },
               ]}
               copyright={
                 <div>
-                  Copyright <Icon type="copyright" /> 2017 知乎商业化
+                  Copyright <Icon type="copyright" /> 2017 商业化
                 </div>
               }
             />

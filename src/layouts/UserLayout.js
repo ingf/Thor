@@ -27,7 +27,7 @@ const links = [
 
 const copyright = (
   <div>
-    Copyright <Icon type="copyright" /> 知乎商业化
+    Copyright <Icon type="copyright" /> 商业化
   </div>
 )
 
@@ -42,10 +42,10 @@ class UserLayout extends React.PureComponent {
   getPageTitle() {
     const { location } = this.props
     const { pathname } = location
-    let title = '知乎商业化'
+    let title = '商业化'
     getRouteData('UserLayout').forEach(item => {
       if (item.path === pathname) {
-        title = `${item.name} - 知乎商业化`
+        title = `${item.name} - 商业化`
       }
     })
     return title
@@ -58,7 +58,7 @@ class UserLayout extends React.PureComponent {
             <div className={styles.header}>
               <Link to="/">
                 <img alt="" className={styles.logo} src={logo} />
-                <span className={styles.title}>知乎商业化</span>
+                <span className={styles.title}>商业化</span>
               </Link>
             </div>
           </div>

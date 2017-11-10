@@ -62,8 +62,8 @@ const data = [
     component: BlankLayout,
     layout: 'BlankLayout',
     children: {
-      name: '知乎',
-      path: 'http://zhihu.com',
+      name: 'Goolge',
+      path: 'http://google.com',
       target: '_blank',
       icon: 'book',
     },
