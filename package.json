@@ -1,0 +1,57 @@
+{
+  "name": "Thor",
+  "private": true,
+  "scripts": {
+    "start": "CLEAR_CONSOLE=none roadhog server",
+    "build": "roadhog build",
+    "build:dll": "roadhog buildDll",
+    "test": "roadhog test",
+    "eslint": "eslint --ext .js src test --fix",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write '{src,test}/**/*.js'"
+  },
+  "dependencies": {
+    "antd": "^3.0.0-beta.6",
+    "dva": "^2.0.4",
+    "dva-loading": "^1.0.3",
+    "history": "^4.7.2",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "query-string": "^5.0.1",
+    "react": "^16.0.0",
+    "react-container-query": "^0.9.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-import": "^1.6.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "expect": "^21.2.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4",
+    "redbox-react": "^1.5.0",
+    "roadhog": "^1.3.1"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  }
+}
