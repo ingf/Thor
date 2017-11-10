@@ -5,7 +5,7 @@ import DocumentTitle from 'react-document-title'
 import { connect } from 'dva'
 import { Link, routerRedux, Route, Redirect, Switch } from 'dva/router'
 import moment from 'moment'
-import groupBy from 'lodash/groupBy'
+import R from 'ramda'
 import { ContainerQuery } from 'react-container-query'
 import classNames from 'classnames'
 
@@ -197,7 +197,7 @@ class BasicLayout extends React.PureComponent {
       }
       return newNotice
     })
-    return groupBy(newNotices, 'type')
+    return R.groupBy('type', newNotices)
   }
   handleOpenChange = openKeys => {
     const latestOpenKey = openKeys.find(
