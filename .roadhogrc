@@ -9,7 +9,7 @@
   },
   "hash": true,
   "disableCSSModules": false,
-  "publicPath": "/public",
+  "publicPath": "/",
   "theme": {
     "@primary-color": "#1DA57A",
     "@link-color": "#1DA57A",
