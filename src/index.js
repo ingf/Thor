@@ -2,8 +2,9 @@ import dva from 'dva'
 import createHistory from 'history/createBrowserHistory'
 import createLoading from 'dva-loading'
 import { message } from 'antd'
+import models from 'models'
+
 import './index.css'
-import models from './models'
 
 const ERROR_MSG_DURATION = 3 // 3 秒
 

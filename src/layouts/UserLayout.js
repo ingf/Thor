@@ -4,11 +4,11 @@ import { Link, Route } from 'dva/router'
 import DocumentTitle from 'react-document-title'
 import { Icon } from 'antd'
 
-import GlobalFooter from '../components/GlobalFooter'
-import styles from './UserLayout.less'
-import { getRouteData } from '../utils/utils'
+import GlobalFooter from 'components/GlobalFooter'
+import { getRouteData } from 'utils/utils'
+import logo from 'assets/logo.jpg'
 
-import logo from '../assets/logo.jpg'
+import styles from './UserLayout.less'
 
 const links = [
   {

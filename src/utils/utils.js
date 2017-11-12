@@ -2,7 +2,7 @@
 
 import moment from 'moment'
 import cloneDeep from 'lodash/cloneDeep'
-import navData from '../common/nav'
+import navData from 'common/nav'
 
 export function fixedZero(val) {
   return val * 1 < 10 ? `0${val}` : val

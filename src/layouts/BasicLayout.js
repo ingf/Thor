@@ -9,11 +9,12 @@ import R from 'ramda'
 import { ContainerQuery } from 'react-container-query'
 import classNames from 'classnames'
 
+import GlobalFooter from 'components/GlobalFooter'
+import { getNavData } from 'common/nav'
+import { getRouteData } from 'utils/utils'
+import logo from 'assets/logo.jpg'
+
 import styles from './BasicLayout.less'
-import GlobalFooter from '../components/GlobalFooter'
-import { getNavData } from '../common/nav'
-import { getRouteData } from '../utils/utils'
-import logo from '../assets/logo.jpg'
 
 const { Header, Sider, Content } = Layout
 const { SubMenu } = Menu

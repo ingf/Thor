@@ -1,9 +1,9 @@
-import BasicLayout from '../layouts/BasicLayout'
-import UserLayout from '../layouts/UserLayout'
-import BlankLayout from '../layouts/BlankLayout'
-import Advertising from '../routes/Advertising'
-import Template from '../routes/Template'
-import Users from '../routes/Users'
+import BasicLayout from 'layouts/BasicLayout'
+import UserLayout from 'layouts/UserLayout'
+import BlankLayout from 'layouts/BlankLayout'
+import Advertising from 'routes/Advertising'
+import Template from 'routes/Template'
+import Users from 'routes/Users'
 
 const data = [
   {

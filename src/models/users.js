@@ -1,5 +1,5 @@
 import queryString from 'query-string'
-import * as usersService from '../services/users'
+import * as usersService from 'services/users'
 
 export default {
   namespace: 'users',
