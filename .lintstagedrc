@@ -1,0 +1,11 @@
+{
+  "{src,test}/**/*.js": [
+    "prettier:precommit",
+    "eslint:precommit",
+    "git add"
+  ],
+  "{src,public}/**/*.{css,less}": [
+    "stylelint:precommit",
+    "git add"
+  ]
+}

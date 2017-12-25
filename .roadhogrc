@@ -10,13 +10,6 @@
   "hash": true,
   "disableCSSModules": false,
   "publicPath": "/",
-  "theme": {
-    "@primary-color": "#1DA57A",
-    "@link-color": "#1DA57A",
-    "@border-radius-base": "2px",
-    "@font-size-base": "16px",
-    "@line-height-base": "1.2"
-  },
   "autoprefixer": null,
   "proxy": {
     "/api": {
@@ -27,22 +20,23 @@
   },
   "extraBabelPlugins": [
     "transform-runtime",
+    "transform-decorators-legacy",
     ["import", { "libraryName": "antd", "style": true }],
-    ["module-resolver",
-      {
-        "root": ["./src"],
-        "alias": {
-          "assets": "./src/assets",
-          "common": "./src/common",
-          "components": "./src/components",
-          "layout": "./src/layout",
-          "models": "./src/models",
-          "routes": "./src/routes",
-          "services": "./src/services",
-          "utils": "./src/utils",
-          "constants": "./src/constants"
-        }
-      }]
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "assets": "./src/assets",
+        "common": "./src/common",
+        "components": "./src/components",
+        "constants": "./src/constants",
+        "layouts": "./src/layouts",
+        "models": "./src/models",
+        "routes": "./src/routes",
+        "services": "./src/services",
+        "utils": "./src/utils",
+        "indexStyle": "./src/index.css"
+      }
+    }]
   ],
   "env": {
     "development": {

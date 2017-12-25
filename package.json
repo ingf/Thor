@@ -6,9 +6,14 @@
     "build": "roadhog build",
     "build:dll": "roadhog buildDll",
     "test": "roadhog test",
-    "eslint": "eslint --ext .js src test --fix",
     "precommit": "lint-staged",
-    "prettier": "prettier --write '{src,test}/**/*.js'"
+    "eslint": "eslint --ext .js src test --fix",
+    "eslint:precommit": "eslint --fix",
+    "prettier": "prettier --write '{src,test}/**/*.js'",
+    "prettier:precommit": "prettier --write",
+    "stylelint": "stylelint '{src,public}/**/*.{css,less}' --fix",
+    "stylelint:precommit": "stylelint --fix",
+    "deploy": "shipit office deploy"
   },
   "dependencies": {
     "antd": "^3.0.0-beta.6",
@@ -24,7 +29,7 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
+    "babel-eslint": "8.0.1",
     "babel-plugin-dva-hmr": "^0.3.2",
     "babel-plugin-import": "^1.6.2",
     "babel-plugin-module-resolver": "^3.0.0",
@@ -43,16 +48,14 @@
     "eslint-plugin-react": "^7.4.0",
     "expect": "^21.2.1",
     "husky": "^0.14.3",
-    "lint-staged": "^4.3.0",
-    "prettier": "^1.7.4",
+    "lint-staged": "^5.0.0",
+    "prettier": "1.8.2",
     "redbox-react": "^1.5.0",
-    "roadhog": "^1.3.1"
-  },
-  "lint-staged": {
-    "{src,test}/**/*.js": [
-      "prettier --write",
-      "eslint",
-      "git add"
-    ]
+    "roadhog": "^1.3.1",
+    "shipit-cli": "^3.0.0",
+    "shipit-deploy": "^2.5.1",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-order": "^0.7.0"
   }
 }

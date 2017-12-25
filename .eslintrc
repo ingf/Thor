@@ -21,6 +21,8 @@
     "max-depth": [2, 4],
     // 一个函数最多有 3 层 callback，使用 async/await
     "max-nested-callbacks": [2, 3],
+    // 一个文件的最大行数
+    "max-lines": ["error", {"max": 400}],
     // 一个函数最多 5 个参数。参数太多的函数，意味着函数功能过于复杂，请拆分
     "max-params": [2, 5],
     // 一个函数最多有 10 个变量，如果超过了，请拆分之，或者精简之
@@ -28,6 +30,7 @@
     // 坚定的 semicolon-less 拥护者
     "semi": [2, "never"],
 
+    "class-methods-use-this": 0,
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
